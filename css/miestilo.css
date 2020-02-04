@@ -1,0 +1,380 @@
+
+  html {
+    font-family: OpenSans, Lato;
+    font-family: var(--main-font), var(--alternate-font);
+    font-size: var(--font-size);
+    line-height:  var(--line-height);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+  }
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  @font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/fontwil/OpenSans-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "OpenSansS";
+    src: url("../fonts/fontwil/OpenSans-Semibold.ttf");
+  }  
+
+  @font-face {
+    font-family: "Lato";
+    src: url("../fonts/fontwil/Lato-Regular.ttf");
+  }  
+
+:root {
+    /*Fuentes */
+    --fuentePrincipal : 'OpenSans';
+    --fuenteSecundaria : 'OpenSansS';
+    --fuenteParrafo : 'Lato';
+
+    /*Colores */
+    --colorPrimario : #0b0146;
+    --grisOscuro : #bdbdbd;
+    --blanco : #ffffff;
+    --negro : #000000;
+    --roja  : #c2000b;
+
+    /* icon dirección heder */
+    --icon-header-height : 2.5rem;
+    --icon-header-line-height : 2.5rem;
+
+    /* nav */
+    --nav-height : 100px;
+    --nav-line : 100px;
+    --logo-spacing : .1rem;
+
+    /* section */
+    --section-pading-top : 1rem; 
+    --section-pading-bootom : 0; 
+}
+
+body {
+    background: white;
+   /* background-image: url(../img/vintage-wallpaper.png); */
+}
+
+/* Reutilizable */
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+
+h1 {
+    color: var(--colorPrimario);
+    font-family: var(--fuentePrincipal);
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+}
+
+h2, h3, h4, h5 {
+    font-family: var(--fuenteSecundaria);
+}
+
+p {
+    font-family: var(--fuenteParrafo);
+    font-size: 1.1rem;
+}
+
+hr {
+    width: 6rem;
+    border: #1a237e 2px solid;
+}
+
+/*-------------- Icono Encabezado -----------------*/
+
+.info-direccion {
+    font-size: 1.1rem;
+    color: var(--blanco);
+}
+
+.direccion-text-wil {
+    letter-spacing: 0.1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.material-icons {
+    letter-spacing: 0.5rem;
+}
+
+.inco-direccion {
+    font-size: 20px;
+    height: var(--icon-header-height);
+    line-height: var(--icon-header-line-height);
+}
+
+.inco-direccions {
+    font-size: 20px;
+    margin: 0 0 0 15px;
+}
+
+.fondireccion {
+    background-color: var(--colorPrimario);
+}
+
+/*---------------- Nav -------------------*/
+
+.nav-contenedor {
+    margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+.nav-sty, .navbar-fixed {
+    height: var(--nav-height);
+    line-height: var(--nav-line);
+    z-index: 996; 
+}
+
+nav .brand-logo {
+    font-family: var(--fuentePrincipal);
+    color: var(--colorPrimario);
+}
+
+nav ul a {
+    color: var(--colorPrimario);
+    font-family: var(--fuenteSecundaria);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: var(--nav-height);
+    line-height: var(--nav-line);
+}
+
+nav ul a:hover {
+    color: var(--blanco);
+    background-color: var(--colorPrimario);
+    transition: all .3s ease;
+}
+
+nav ul li.active {
+    color: var(--roja);
+}
+
+.boton-colwil {
+    color: var(--colorPrimario);
+}
+
+.brand-logo img {
+    max-height: var(--nav-height);
+    line-height: var(--nav-line);
+    padding: var(--logo-spacing);
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+/* Movil */
+
+.nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    font-size: 1.8rem;
+}
+
+.side-nav {
+    background-color: rgb(11, 1, 70, 0.6);
+    top: var(--nav-height);
+
+}
+
+.side-nav li > a {
+    color: var(--blanco);
+}
+
+.side-nav li > a:hover {
+    color: var(--roja);
+    background-color: var(--colorPrimario);
+    transition: all .3s ease;
+}
+
+/*---------------Header---------------------*/
+
+.redeswilson {
+    font-size: 2rem;
+}
+
+.slider .slides li .caption {
+    color: var(--blanco);
+    position: absolute;
+    top: 20%;
+    text-shadow:black 6px 6px 4px;
+    font-family: var(--fuenteSecundaria);
+
+  }
+
+.text_color_azul {
+    color: #0b0146;
+}
+
+.slider-text-secundario {
+    font-family: var(--fuenteParrafo);
+    color: var(--blanco);
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------Servicio---------------------*/
+
+.sectionwil {
+    padding-top: var(--section-pading-top);
+    padding-bottom: var(--section-pading-bootom);
+}
+
+.serviciiconwil {
+    font-size: 5rem;
+    padding: 1.5rem 0 0 1rem;
+    color: var(--colorPrimario);
+}
+
+.icon-cuadwil {
+    color: var(--blanco);
+    font-size: 3.5rem;
+    padding: 1.5rem 0 0 1rem;
+}
+
+.row .col.l6 {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-servicio-wil {
+    background-color: var(--colorPrimario);
+}
+
+.card-servicio-wils {
+    background-color: var(--grisOscuro);
+}
+
+.card-titulo-wil {
+    color: var(--colorPrimario);
+}
+
+.card-parrafo-wil {
+    color: var(--colorPrimario) !important;
+}
+
+.card-leermas-wil {
+    color: var(--colorPrimario) !important;
+}
+
+.card-leermas-wil-fondo  {
+    background-color: var(--colorPrimario) !important;
+    border-top: none !important;
+}
+
+.card-leermas-wil-fondos {
+    background-color: var(--grisOscuro) !important;
+    border-top: none !important;
+} 
+
+
+.backcolor_fondo {
+    background-color: var(--colorPrimario);
+}
+
+/*//////////////////////// Blog ////////////////////////*/
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: var(--negro);
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+    color: var(--roja);
+  }
+
+  .blog-fondo-wil {
+      background-color: var(--colorPrimario);
+      line-height: 5px;
+  }
+
+  .whasapp-icon-wil {
+      height: 60px;
+      width: 60px;
+      background-position: center;
+      background-image: url(../img/whasap.png);
+      background-repeat: none;
+      padding-bottom: 0;
+  }
+
+  /* Contacto */
+
+  .img-contacto-wil {
+      height: 600px;
+  }
+
+.boton-color-fix {
+    background-color: rgba(0, 0, 0, 0.44);
+}
+
+@media only screen and (max-width: 600px) {
+  .mistilotitu {
+      font-size: 12vw;
+    }
+}
+
+.boton-color-fix {
+    background-color: rgba(0, 0, 0, 0.44);
+}
+
+@media only screen and (max-width: 600px) {
+  .mistilotitu {
+      font-size: 12vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+ .menu-fixed {
+  position: relative;
+  height: 56px;
+  z-index: 997;
+}
+
+.menu-fixed nav {
+  position: fixed;
+}
+
+#sidenav-overlay {
+   z-index: 996;
+}
+
+}
+
+/* Responsible 
+
+@media only screen and (maxwidth: 600px) {
+    .container {
+      width: 85%;
+    }
+  }
+
+
+  @media only screen and (max-width: 992px) {
+    .container {
+      width: 85%;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .container {
+      width: 85%;
+    }
+  }
+
+*/
+
